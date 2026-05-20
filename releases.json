@@ -1,6 +1,5 @@
 {
   "plugins": {
-    "ComfyUI Frontend": "1.0.0"
-  },
-  "lastUpdated": "2026-05-20"
+    "ComfyUI Frontend": "0.4.0"
+  }
 }
