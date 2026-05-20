@@ -1,0 +1,19 @@
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-*
+
+# Dependencies (if any)
+node_modules/
+vendor/
+
+# Build output (if any)
+dist/
+build/
+out/
