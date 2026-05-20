@@ -139,8 +139,8 @@ p {
 
 .product {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: var(--space-md);
   padding: var(--space-md);
   background: rgba(0, 0, 0, 0.04);
   border-radius: 8px;
@@ -153,13 +153,31 @@ p {
   background: rgba(0, 0, 0, 0.08);
 }
 
-.product strong {
+.product img {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.product-info strong {
   font-size: 0.95rem;
 }
 
-.product span {
+.product-info span {
   font-size: 0.85rem;
   color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ============================================================
@@ -219,8 +237,11 @@ p {
   }
 
   .product {
-    flex-direction: column;
-    gap: 0.25rem;
-    text-align: center;
+    gap: var(--space-sm);
+  }
+
+  .product img {
+    width: 44px;
+    height: 44px;
   }
 }
