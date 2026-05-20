@@ -46,16 +46,46 @@ body {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   color: var(--color-text);
   line-height: 1.6;
 }
 
 /* ============================================================
-   Content Card
+   Header
    ============================================================ */
-.container {
+.site-header {
+  padding: var(--space-md) var(--space-lg);
+}
+
+.site-logo {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.site-logo:hover {
+  opacity: 1;
+}
+
+/* ============================================================
+   Main — fills remaining space, centers card
+   ============================================================ */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+/* ============================================================
+   Card
+   ============================================================ */
+.card {
   text-align: center;
   background: var(--color-bg-card);
   padding: var(--space-xl) 4rem;
@@ -78,10 +108,24 @@ p {
 }
 
 /* ============================================================
+   Footer
+   ============================================================ */
+.site-footer {
+  padding: var(--space-md) var(--space-lg);
+  text-align: center;
+}
+
+.site-footer p {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* ============================================================
    Responsive
    ============================================================ */
 @media (max-width: 600px) {
-  .container {
+  .card {
     padding: var(--space-lg) var(--space-md);
   }
 
