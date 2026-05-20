@@ -1,3 +1,5 @@
-# Tangenten Website
+# tangenten.xyz
 
-🌐 [tangenten.github.io/Tangenten-Website](https://tangenten.github.io/Tangenten-Website/)
+My little corner of the web.
+
+🌐 [tangenten.xyz](https://tangenten.xyz/)
