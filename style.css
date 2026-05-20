@@ -46,57 +46,23 @@ body {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: var(--color-text);
   line-height: 1.6;
 }
 
 /* ============================================================
-   Navigation
+   Content Card
    ============================================================ */
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-md) var(--space-lg);
-}
-
-.nav-logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 0.02em;
-  opacity: 0.9;
-  transition: opacity 0.2s;
-}
-
-.nav-logo:hover {
-  opacity: 1;
-}
-
-/* ============================================================
-   Main Content
-   ============================================================ */
-main {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-lg);
-}
-
-.hero {
-  width: 100%;
-  max-width: var(--content-max);
-}
-
 .container {
   text-align: center;
   background: var(--color-bg-card);
   padding: var(--space-xl) 4rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  max-width: var(--content-max);
+  width: 100%;
 }
 
 h1 {
@@ -109,32 +75,6 @@ h1 {
 p {
   font-size: 1.2rem;
   color: var(--color-text-muted);
-  margin-bottom: var(--space-md);
-}
-
-.link {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-/* ============================================================
-   Footer
-   ============================================================ */
-.footer {
-  text-align: center;
-  padding: var(--space-md);
-  background: var(--color-footer-bg);
-}
-
-.footer p {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0;
 }
 
 /* ============================================================
