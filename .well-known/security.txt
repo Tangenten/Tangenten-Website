@@ -1,0 +1,3 @@
+Contact: mailto:tangenten@pm.me
+Preferred-Languages: en
+Canonical: https://tangenten.xyz/.well-known/security.txt

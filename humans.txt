@@ -1,0 +1,11 @@
+/* TEAM */
+  Name: Tangenten
+  Site: https://tangenten.xyz
+
+/* THANKS */
+  GitHub Pages — hosting
+  Cloudflare — DNS & CDN
+
+/* SITE */
+  Built with: HTML, CSS, JavaScript
+  Last updated: 2026-05-20
