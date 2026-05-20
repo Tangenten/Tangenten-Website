@@ -1,4 +1,7 @@
-// GitHub Pages — main script
+/**
+ * Tangenten — main script
+ * Add your interactive features below.
+ */
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Hello from GitHub Pages!');
+  console.log('Tangenten site loaded.');
 });
