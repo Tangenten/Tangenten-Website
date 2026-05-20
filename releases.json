@@ -1,6 +1,6 @@
 {
   "plugins": {
-    "example-plugin": "1.0.0"
+    "ComfyUI Frontend": "1.0.0"
   },
   "lastUpdated": "2026-05-20"
 }
