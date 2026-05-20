@@ -1,6 +1,5 @@
 # GitHub Pages site settings
-title: Hello World
-description: A simple GitHub Pages site built with raw HTML, CSS, and JS.
-theme: jekyll-theme-cayman  # ignored for static HTML sites, used only if Jekyll is enabled
+title: Tangenten
+description: Personal website for Tangenten
 show_downloads: false
 google_analytics:
