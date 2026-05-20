@@ -112,6 +112,21 @@ p {
   color: var(--color-text-muted);
 }
 
+.section-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+  margin-top: var(--space-md);
+  text-align: left;
+}
+
+.section-label:first-of-type {
+  margin-top: 0;
+}
+
 /* ============================================================
    Products
    ============================================================ */
