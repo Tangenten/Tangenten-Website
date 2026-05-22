@@ -1,5 +1,6 @@
 {
   "plugins": {
-    "ComfyUI Frontend": "0.4.0"
+    "ComfyUI Frontend": "0.4.0",
+    "Saver (FFMPEG)": "0.4.0"
   }
 }
