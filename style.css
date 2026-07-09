@@ -279,7 +279,6 @@ h1 {
 }
 
 .contact-row {
-  pointer-events: none;
   padding: 0.5rem;
   display: flex;
   gap: 0.5rem;

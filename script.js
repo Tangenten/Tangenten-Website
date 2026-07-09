@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const encodedDiscord = 'dGFuZ2VudGVu';
 
   function copy(text, label) {
-    navigator.clipboard.writeText(text).catch(() => {});
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).catch(() => {});
+    }
     toast.textContent = label;
     toast.classList.add('show');
     setTimeout(() => toast.classList.remove('show'), 2000);
