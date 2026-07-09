@@ -46,7 +46,6 @@ body {
   flex-direction: column;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 #bg-canvas {
@@ -277,6 +276,22 @@ h1 {
 .link:hover .link-arrow {
   transform: translateX(4px);
   color: var(--accent);
+}
+
+.contact-row {
+  pointer-events: none;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  background: rgba(22,22,22,0.8);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--glass-shadow);
+  opacity: 0;
+  animation: fade-up 0.5s ease-out forwards;
+  animation-delay: var(--delay);
 }
 
 #toast {
