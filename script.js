@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (discordBtn && toast) {
     discordBtn.addEventListener('click', () => {
       const user = atob(encodedDiscord);
-      copy(`discord:${user}`, 'Discord copied to clipboard');
+      copy(user, 'Discord username copied to clipboard');
       if (discordDesc) discordDesc.textContent = user;
     });
   }
