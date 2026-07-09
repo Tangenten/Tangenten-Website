@@ -14,28 +14,25 @@
   <link rel="icon" type="image/png" href="profile.png">
   <link rel="apple-touch-icon" href="profile.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=6">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <canvas id="bg-canvas"></canvas>
   <main>
     <div class="container">
       <div class="hero">
         <div class="heading-row">
           <img src="profile.png" alt="" class="profile-pic">
-          <h1>Tangenten</h1>
+          <h1><span class="sine">∿</span>Tangenten<span class="sine">∿</span></h1>
         </div>
         <p class="subtitle"><span class="dash">&mdash;</span>DaVinci Resolve plugins, games &amp; creative apps</p>
       </div>
       <div class="links">
         <a href="https://tangenten.gumroad.com/" class="link" target="_blank" rel="noopener" style="--delay:0.1s">
           <div class="link-main">
-            <svg class="link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M4 4h12l1.5 12h-15L4 4z"/>
-              <path d="M7 8V6a3 3 0 0 1 6 0v2"/>
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0Zm-.007 5.12c4.48 0 5.995 3.025 6.064 4.744h-3.239c-.069-.962-.897-2.406-2.896-2.406-2.136 0-3.514 1.857-3.514 4.126 0 2.27 1.378 4.125 3.514 4.125 1.93 0 2.758-1.512 3.103-3.025h-3.103v-1.238h6.509v6.327h-2.855v-3.989c-.207 1.444-1.102 4.264-4.617 4.264-3.516 0-5.584-2.82-5.584-6.326 0-3.645 2.276-6.602 6.618-6.602z"/>
             </svg>
             <div class="link-body">
               <span class="link-name">Gumroad</span>
@@ -46,12 +43,8 @@
         </a>
         <a href="https://tangenten.itch.io/" class="link" target="_blank" rel="noopener" style="--delay:0.2s">
           <div class="link-main">
-            <svg class="link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="5" width="16" height="10" rx="2"/>
-              <circle cx="6" cy="10" r="1" fill="currentColor"/>
-              <circle cx="14" cy="10" r="1" fill="currentColor"/>
-              <path d="M9 10h2"/>
-              <path d="M10 9v2"/>
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.78 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.74 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.03 8.85 1.952.454 5.545.662 9.15.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602z"/>
             </svg>
             <div class="link-body">
               <span class="link-name">itch.io</span>
@@ -62,9 +55,8 @@
         </a>
         <a href="https://www.youtube.com/@Tangenten" class="link" target="_blank" rel="noopener" style="--delay:0.3s">
           <div class="link-main">
-            <svg class="link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="1.5" y="4" width="17" height="12" rx="3"/>
-              <path d="M7 6.5v7l6-3.5z" fill="currentColor" stroke="none"/>
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
             <div class="link-body">
               <span class="link-name">YouTube</span>
@@ -75,8 +67,8 @@
         </a>
         <a href="https://x.com/_Tangenten_" class="link" target="_blank" rel="noopener" style="--delay:0.4s">
           <div class="link-main">
-            <svg class="link-icon" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M11.25 8.5 16.15 3h-1.16l-4.25 4.78L7.28 3H3l5.13 7.23L3 17h1.16l4.48-5.04L12.72 17H17l-5.34-7.5H11.25ZM6.7 4.02l8.23 11.38h-1.24L5.46 4.02h1.24Z"/>
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/>
             </svg>
             <div class="link-body">
               <span class="link-name">X</span>
@@ -87,8 +79,8 @@
         </a>
         <a href="https://github.com/Tangenten" class="link" target="_blank" rel="noopener" style="--delay:0.5s">
           <div class="link-main">
-            <svg class="link-icon" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 10 4.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 20 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
             </svg>
             <div class="link-body">
               <span class="link-name">GitHub</span>
@@ -97,22 +89,31 @@
           </div>
           <span class="link-arrow">&rarr;</span>
         </a>
-        <button class="link" id="contact-btn" style="--delay:0.6s">
-          <div class="link-main">
+        <div class="link" style="--delay:0.6s;pointer-events:none;padding:0.5rem;width:calc(100% - 40px);margin-left:auto">
+          <button class="link-half" id="contact-btn">
             <svg class="link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
               <rect x="2" y="4" width="16" height="12" rx="2"/>
               <path d="M2 6l8 5 8-5"/>
             </svg>
             <div class="link-body">
               <span class="link-name">Contact</span>
-              <span class="link-desc">Send me an email</span>
+              <span class="link-desc">Email</span>
             </div>
-          </div>
-          <span class="link-arrow">&rarr;</span>
-        </button>
+          </button>
+          <button class="link-half" id="discord-btn">
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/>
+            </svg>
+            <div class="link-body">
+              <span class="link-name">Contact</span>
+              <span class="link-desc">Discord</span>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </main>
+  <div id="toast"></div>
   <footer class="footer">
     <p>&copy; 2026 Tangenten</p>
   </footer>
