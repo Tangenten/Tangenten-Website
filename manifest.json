@@ -1,16 +1,16 @@
 {
   "name": "Tangenten",
   "short_name": "Tangenten",
-  "description": "A simple GitHub Pages site.",
+  "description": "DaVinci Resolve plugins, games, and creative apps.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#667eea",
-  "theme_color": "#667eea",
+  "background_color": "#070708",
+  "theme_color": "#0a0a0a",
   "icons": [
     {
-      "src": "favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "profile.png",
+      "sizes": "672x672",
+      "type": "image/png"
     }
   ]
 }
