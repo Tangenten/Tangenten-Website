@@ -1,7 +1,11 @@
-/**
- * Tangenten — main script
- * Add your interactive features below.
- */
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Tangenten site loaded.');
+  const btn = document.getElementById('contact-btn');
+  if (!btn) return;
+
+  const encoded = 'dGFuZ2VudGVuQHBtLm1l';
+
+  btn.addEventListener('click', () => {
+    const email = atob(encoded);
+    window.location.href = `mailto:${email}`;
+  });
 });
