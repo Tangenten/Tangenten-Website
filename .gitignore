@@ -18,5 +18,3 @@ dist/
 build/
 out/
 
-# Local dev
-server.py
